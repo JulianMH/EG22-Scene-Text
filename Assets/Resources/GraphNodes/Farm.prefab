@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1678063034269966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4712059158878484}
+  - component: {fileID: 33944787975540428}
+  - component: {fileID: 3021218180780060870}
+  - component: {fileID: 4968123299056401360}
+  - component: {fileID: 1340554590927992531}
+  m_Layer: 0
+  m_Name: Farm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4712059158878484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678063034269966}
+  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 939278954901224684}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33944787975540428
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678063034269966}
+  m_Mesh: {fileID: 4300000, guid: 4b725fcf85dff924582a9d54487f87f1, type: 3}
+--- !u!114 &3021218180780060870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678063034269966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca27061976ea4936bbc3c1c9446251e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collider: {fileID: 1340554590927992531}
+  AreaTerrainCollider: {fileID: 9051989191384201014}
+  NodeType: Farm
+  ExpressionHierachy:
+  - farmstead
+  AllowSwapMove: 1
+  AllowDiffusionPositionMove: 1
+  AllowDiffusionRotationMove: 1
+  CorrespondsToNodeIndex: 0
+--- !u!114 &4968123299056401360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678063034269966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba9d3e5f697748789417cae4c745f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 0.639, g: 0.494, b: 0.376, a: 1}
+  LocalPositions:
+  - {x: 0, y: 0, z: -8}
+  - {x: 0.012328625, y: 0, z: -4.299612}
+  - {x: -0.54422474, y: 0, z: -1.9826422}
+  - {x: 0.023943424, y: 0, z: -0.08559513}
+  Parent: {fileID: 0}
+  IsRootPath: 0
+  Width: 3.45
+  renderTextureLineRenderer: {fileID: 0}
+  terrainGameObject: {fileID: 0}
+  FixStartX: 1
+  FixStartZ: 1
+  FixEndX: 1
+  FixEndZ: 1
+  IgnoreOwnerCollider: 0
+  TotalAngleLimit: 60
+  TotalLengthLimit: 10
+  IsIntersection: 0
+--- !u!65 &1340554590927992531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678063034269966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 0, z: 18}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4958888303001024007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939278954901224684}
+  - component: {fileID: 7741536753620935373}
+  - component: {fileID: 9051989191384201014}
+  m_Layer: 2
+  m_Name: FarmAreaCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939278954901224684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958888303001024007}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4712059158878484}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7741536753620935373
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958888303001024007}
+  m_Mesh: {fileID: 4300000, guid: 4b725fcf85dff924582a9d54487f87f1, type: 3}
+--- !u!65 &9051989191384201014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958888303001024007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 13, z: 13}
+  m_Center: {x: 0, y: 6.5, z: 0}
