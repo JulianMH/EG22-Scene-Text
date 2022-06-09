@@ -7,7 +7,7 @@ This repository contains the source Code for the Short Paper "Scene Synthesis wi
 
 This source code is intended as a proof of concept and to understand it, we highly recommend reading the paper and its supplemental material. It includes two example graph grammars: One very basic grammar for scenes of colored cubes and spheres. It does not require any further dependencies, but is intended as an example and does not produce great results. The second grammar is the medieval village scene grammar we used for the paper. The full grammars are visualized in the files [SimpleGraphGrammar.svg](/SimpleGraphGrammar.svg) and [VillageGraphGrammar.svg](/VillageGraphGrammar.svg)  from this repository.
 
-Link to the paper: *not published yet, will be added*.
+[Link to the paper](https://diglib.eg.org/handle/10.2312/egs20221026)
 
 ## Starting Point
 
